@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #inputs{
+        background-color: #82adad;
+        padding: 40px;
+        margin-top: 10px;
+        text-align: center;
+      }
+      #cInput, #fInput{
+        font-size: 24px;
+        margin: 15px;
+      }
+      #submit{
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+      }
+      .fr{
+        background-color: #6ce0de;
+        text-align: center;
+        padding: 2px;
+      }
+      .lo{
+        margin: 40px;
+      }
+      table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body><div class="lo">
+<div class="fr">  <h1>Celsius to Fahrenheit Conversion</h1></div>
+    <div id="inputs">
+
+      <input id="cInput"  placeholder="Celsius"/>
+      <input id="fInput" placeholder="Farenheit"/><br>
+
+
+    <button id="submit">Convert</button>
+
+    <h2 id="result">Result:</h2>
+  </div><br>
+  <div class="fr"><h2>Celsius Calculation</h2></div>
+  <div class="f1">
+    <p>Celsius (°C) is a scale used to measure temperature, primarily in the metric system. It is one of the most commonly used temperature scales worldwide, particularly in scientific contexts and most countries outside of the United States. The Celsius scale is named after the Swedish astronomer Anders Celsius, who first proposed it in 1742.
+<div class="fr"><h2>Key Points about Celsius</h2></div>
+<p>1. Zero Degrees Celsius (0°C) is defined as the freezing point of water at standard atmospheric pressure (1 atmosphere).</p>
+
+</p></div>
+<p>2. One Hundred Degrees Celsius (100°C) is defined as the boiling point of water at standard atmospheric pressure.</p>
+<p>3. The Celsius scale is part of the metric system and is based on the properties of water.</p>
+<p>4. The Celsius scale divides the difference between the freezing and boiling points of water into 100 equal parts, making each degree Celsius equal to one hundredth of this difference.</p>
+<h2>Formula to Convert Celsius to Fahrenheit</h2>
+<ul>
+  <li> Celsius to Fahrenheit: F = 9/5C+32</li>
+  <li>Fahrenheit to Celsius: C = 5/9(F-32)</li>
+</ul>
+<table style="width:100%">
+  <tr>
+    <th>Celsius °C</th>
+    <th>Fahrenheit °F</th>
+    <th>discription</th>
+  </tr>
+  <tr>
+    <td>0 °C</td>
+    <td>32.0 °F</td>
+    <td> freezing point of water</td>
+  </tr>
+
+  <tr>
+    <td>1 °C	</td>
+    <td>33.8 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2 °C	</td>
+    <td>35.6 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3 °C	</td>
+    <td>37.4 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4 °C	</td>
+    <td>39.2 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5 °C	</td>
+    <td>41.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6 °C	</td>
+    <td>42.8 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7 °C	</td>
+    <td>44.6 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8 °C	</td>
+    <td>46.4 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9 °C	</td>
+    <td>48.2 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10 °C	</td>
+    <td>50.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20 °C	</td>
+    <td>68.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>21 °C	</td>
+    <td>69.8 °F	</td>
+    <td>room temperature</td>
+  </tr>
+  <tr>
+    <td>30 °C	</td>
+    <td>86.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>37 °C	</td>
+    <td>98.6 °F	</td>
+    <td>average body temperature</td>
+  </tr>
+  <tr>
+    <td>40 °C	</td>
+    <td>104.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>50 °C	</td>
+    <td>122.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>60 °C	</td>
+    <td>140.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>70 °C	</td>
+    <td>158.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>80 °C	</td>
+    <td>176.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>90 °C	</td>
+    <td>194.0 °F	</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>100 °C	</td>
+    <td>212.0 °F	</td>
+    <td>boiling point of water</td>
+  </tr>
+</table>
+<div>
+    <script>function getElm(id){
+  return document.getElementById(id);
+}
+
+function readValue(id){
+  return getElm(id).value;
+}
+
+function updateHtml(text,id){
+  getElm(id).innerHTML  = text;
+}
+
+
+function convertCToF(c) {
+  var f = c * (9 / 5) + 32;
+  return f;
+}
+
+function convertFToC(f) {
+  var c = (f - 32) * 5 / 9;
+  return c;
+}
+
+function sequnce(){
+  var val =  readValue(activeId);
+  var convertedVal = activeFn(val);
+  updateHtml("Result: "+ convertedVal + activeSuffix,'result')
+}
+
+var activeFn = convertCToF;
+var activeId = 'cInput';
+var activeSuffix = "℉"
+
+getElm('cInput').onfocus = function(){
+  activeFn = convertCToF;
+  activeId = 'cInput';
+  activeSuffix = "℉"
+}
+
+getElm('fInput').onfocus  = function(){
+  activeFn = convertCToF;
+  activeId = 'fInput';
+  activeSuffix = "℃"
+}
+
+getElm("cInput").oninput = sequnce;
+getElm("fInput").oninput = sequnce;
+getElm("submit").oninput = sequnce;
+</script>
+  </body>
+</html>
